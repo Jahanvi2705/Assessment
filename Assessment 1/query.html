@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p class="content">This is a paragraph with the class "content".</p>
+    <button id="Btn">Change Text</button>
+
+    <script>
+        const contentElement = document.querySelector(".content");
+        const changeTextBtn = document.getElementById("Btn");
+
+        changeTextBtn.addEventListener("click", function() {
+            contentElement.textContent = "HELLO WORLD!";
+        });
+    </script>
+</body>
+</html>
+

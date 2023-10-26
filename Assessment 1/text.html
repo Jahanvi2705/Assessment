@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph">HIII</p>
+    <button id="btn">Change Text</button>
+
+    <script>
+        const paragraph = document.getElementById("paragraph");
+        const changeTextBtn = document.getElementById("btn");
+
+        changeTextBtn.addEventListener("click", function() {
+            paragraph.textContent = "GOOD MORNING";
+        });
+    </script>
+</body>
+</html>

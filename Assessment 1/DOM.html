@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Hello</h1>
+    <button id="change">Click here</button>
+    <button id="addNew"> New Element</button>
+    <div id="container"></div>
+
+    <script>
+        const demoElement = document.getElementById("demo");
+        const changeTextBtn = document.getElementById("change");
+        const addNewElementBtn = document.getElementById("addNew");
+        const container = document.getElementById("container");
+
+        changeTextBtn.addEventListener("click", function() {
+            demoElement.textContent = "Text Changed!";
+        });
+
+        addNewElementBtn.addEventListener("click", function() {
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "Good Morning! My name is Janvi.";
+            container.appendChild(newParagraph);
+        });
+    </script>
+</body>
+</html>

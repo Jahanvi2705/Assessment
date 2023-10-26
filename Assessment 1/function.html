@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        (function() {
+            var message = "Good Morning";
+
+            function showMessage() {
+                document.getElementById("output").textContent = message;
+            }
+            showMessage();
+        })();
+        
+    </script>
+</body>
+</html>
