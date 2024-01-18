@@ -9,31 +9,27 @@
 
 <body>
     <script>
-        function countOccurrences(arr) {
-            // Create array
-            const array = {};
+        // first function
+        let myFun1 = [1, 2, 2, 3].reduce
+            (function (acc, curr) {
+                return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+            },
+                {});
 
-            // Loop for array
-            for (let i = 0; i < arr.length; i++) {
-                const arrayValue = arr[i];
+        console.log(myFun1)
+        // second function
+        let myFun2 = [9, 9, 9, 99].reduce(function (acc, curr) {
+            return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+        },
+            {});
+        console.log(myFun2)
+        // third function
+        let myFun3 = [1, 2, 2, 3].reduce(function (acc, curr) {
+            return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+        },
+            {});
+            console.log(myFun3)
 
-                // Check that key is available
-                if (array[arrayValue] === undefined) {
-                    // If key not available than create a new key
-                    array[arrayValue] = 1;
-                } else {
-                    // If  key available than increment value by 1
-                    array[arrayValue]++;
-                }
-            }
-
-            return array;
-        }
-
-        const myFunction = [1, 2, 3, 4, 1, 2, 3, 1, 2, 1];
-        const result = countOccurrences(myFunction);
-        // print array
-        console.log(result);
     </script>
 </body>
 
